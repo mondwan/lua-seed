@@ -21,8 +21,9 @@ cd lua-seed
 * If you would like to start a new project without any history of this project
 
 ```
-git clone --depth=1 http://192.168.0.22/git/lua-seed.git
+git clone --depth=1 https://www.github.com/mondwan/lua-seed.git
 cd lua-seed
+rm -fr .git/
 ```
 
 Note that ```depth=1``` tells git to only pull down one commit worth of historical data
