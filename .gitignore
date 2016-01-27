@@ -8,3 +8,8 @@ Session.vim
 
 # lua ignore
 luac
+
+# Remove ldoc output
+doc/index.html
+doc/ldoc.css
+doc/topics/
