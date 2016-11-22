@@ -11,5 +11,6 @@ luac
 
 # Remove ldoc output
 doc/index.html
-doc/ldoc.css
+doc/*.css
 doc/topics/
+doc/modules/
