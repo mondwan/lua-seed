@@ -17,11 +17,16 @@ local SYSPATH = package.path
 local path = string.format('%s/src/?.lua;%s', ROOT, SYSPATH)
 
 -- print(path)
-
-os.execute(
+local exitCode = os.execute(
     string.format(
         'lunit -p "%s" %s/test/test_*',
         path,
         ROOT
     )
 )
+
+if exitCode ~= 0 then
+    exitCode = 1
+end
+
+os.exit(exitCode)
